@@ -4,7 +4,7 @@ import {
   ModelDefined
 } from 'sequelize'
 
-const sequelize = require('@database/index')
+import { sequelize } from '@database/index'
 
 interface UserAttributes {
   id: String;
@@ -29,8 +29,7 @@ const User: ModelDefined<
     }
   },
   {
-    tableName: 'users',
-    sequelize
+    tableName: 'users'
   })
 
 export default User
