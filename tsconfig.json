@@ -1,0 +1,28 @@
+{
+  /* aVisit https://aka.ms/tsconfig.json to read more about this file */
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES6"],
+    "allowJs": true,
+    "outDir": "./build",
+    "rootDir": ".",
+    "removeComments": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@config/*": ["./src/config/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@database/*": ["./src/database/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@models/*": ["./src/models/*"]
+    }
+  }
+}
