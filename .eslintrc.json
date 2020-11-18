@@ -4,7 +4,9 @@
     "node": true
   },
   "extends": [
-    "standard"
+    "standard",
+    "prettier/standard",
+    "prettier/@typescript-eslint"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
