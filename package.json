@@ -10,7 +10,9 @@
     "start": "node build/index.js"
   },
   "husky": {
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
